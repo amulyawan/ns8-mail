@@ -19,11 +19,11 @@
     }
   },
   // If you're using docker to develop with vscode, comment all options below and rebuild without cache the container.
-  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,Z",
-  "workspaceFolder": "/workspace",
+  //*"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,Z",
+  //*"workspaceFolder": "/workspace",
   // --userns=keep-id is used to correctly mount podman volume
   // --network=host is required for hot-reload
-  "runArgs": ["--userns=keep-id", "--network=host"],
-  "containerUser": "node",
-  "remoteUser": "node"
+  //*"runArgs": ["--userns=keep-id", "--network=host"],
+  //*"containerUser": "node",
+  //*"remoteUser": "node"
 }
